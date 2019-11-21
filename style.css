@@ -1,11 +1,12 @@
-html{
-
-}
+/* *{
+    border: 1px solid red;
+} */
 
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     background-color: #cf8659;
+    text-align: center;
 }
 
 .splash{
@@ -14,9 +15,24 @@ body{
     display: grid;
     text-align: center;
     align-items: center;
+    color: #3b3b3b;
+    grid-template-rows: 1fr 10vh;
 }
 
 .splash h1{
+    font-size: 3rem;
     margin: 0;
-    
+}
+
+hr{
+    width: 15%;
+    background-color: #3b3b3b;
+    height: 1px;
+    border: none;
+}
+
+.skills, .education{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
 }
