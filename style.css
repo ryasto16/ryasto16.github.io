@@ -2,21 +2,38 @@
     border: 1px solid red;
 } */
 
+:root{
+    --blue:#80a2ab;
+    --orange:#cf8659;
+    --textColor:#3b3b3b;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    background-color: #cf8659;
+    background-color: var(--orange);
     text-align: center;
 }
 
 .splash{
-    background-image: linear-gradient(#80a2ab,#cf8659);
+    background-image: linear-gradient(var(--blue),var(--orange));
     height: 100vh;
     display: grid;
     text-align: center;
     align-items: center;
-    color: #3b3b3b;
+    color: var(--textColor);
     grid-template-rows: 1fr 10vh;
+    border-bottom: 1px solid black;
+}
+
+.splash a{
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 1.5rem;
 }
 
 .splash h1{
@@ -24,14 +41,19 @@ body{
     margin: 0;
 }
 
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 hr{
     width: 15%;
-    background-color: #3b3b3b;
+    background-color: var(--textColor);
     height: 1px;
     border: none;
 }
 
-.skills, .education{
+.threeCol{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
