@@ -52,7 +52,8 @@ nav{
 }
 
 .threeCol i{
-    font-size: 30px;
+    font-size: 50px;
+    margin-bottom: 5px;
 }
 
 hr{
@@ -68,4 +69,16 @@ hr{
     text-align: center;
     grid-gap: 20px;
     align-content: center;
+    margin: 0 10px;
+}
+
+.card{
+    border-radius: 5%;
+    box-shadow:0 0 10px black ;
+    padding: 5px;
+}
+
+.card img{
+    width: 80%;
+    height: auto;
 }
