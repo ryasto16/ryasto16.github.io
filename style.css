@@ -65,11 +65,11 @@ hr{
 
 .threeCol{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25%;
     text-align: center;
     grid-gap: 20px;
-    align-content: center;
-    margin: 0 10px;
+    justify-content: space-around;
+    grid-auto-columns: 10px;
 }
 
 .card{
@@ -78,7 +78,15 @@ hr{
     padding: 5px;
 }
 
+.threeCol a{
+    color: black;
+}
+
 .card img{
     width: 80%;
     height: auto;
+}
+
+main, footer{
+    margin: 0 10px;
 }
