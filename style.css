@@ -48,11 +48,11 @@ h2{
 
 nav{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .threeCol i{
-    font-size: 50px;
+    font-size: 100px;
     margin-bottom: 5px;
 }
 
@@ -66,10 +66,12 @@ hr{
 .threeCol{
     display: grid;
     grid-template-columns: 25% 25% 25%;
+    grid-auto-rows: 35%;
     text-align: center;
     grid-gap: 20px;
     justify-content: space-around;
     grid-auto-columns: 10px;
+    height: 100%;
 }
 
 .card{
@@ -89,4 +91,9 @@ hr{
 
 main, footer{
     margin: 0 10px;
+}
+
+section{
+    height: 100vh;
+    padding-top: 10px;
 }
